@@ -1,0 +1,6 @@
+.env
+node_modules
+test.html
+test.js
+printfunc.js
+package-lock.json

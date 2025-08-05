@@ -4,7 +4,7 @@ const app = express()
 const cookieParser = require("cookie-parser")
 const dbConnection  = require("./config/db")
 const userModel = require("./models/register-model")
-const PORT = 3000 
+ const PORT = 3000 
 
 app.set("view engine", "ejs")
 app.use(express.json())
@@ -92,9 +92,13 @@ app.post("/login", async(req, res)=>{
  
 })
 
+app.get("/intern", (req,res)=>{
+  res.render("intern.ejs")
+})
 
-
-
+app.get("/certificate", (req,res)=>{
+  res.render("certificate.ejs")
+})
 
 
 app.listen(PORT, ()=>console.log(`server is running on port: ${PORT}`))

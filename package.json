@@ -8,11 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This is a simple full-stack web application that allows users to **register** and **log in**. It uses Node.js, Express, MongoDB, and EJS templating.",
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mongoose": "^8.17.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/04gautam/intern-portal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/04gautam/intern-portal/issues"
+  },
+  "homepage": "https://github.com/04gautam/intern-portal#readme"
 }

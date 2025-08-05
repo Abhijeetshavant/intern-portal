@@ -32,8 +32,9 @@ app.get("/",cookieProtect , async(req, res)=>{
 
   const user = await userModel.findOne({email: req.cookies.token})
   const userName = user.fullName;
+  const fund = user.fund;
 
-  res.render("main.ejs", {userName})
+  res.render("main.ejs", {userName, fund})
 
 
 })
@@ -54,7 +55,8 @@ app.post("/register", async(req, res)=>{
   await userModel.create({
     fullName,
     email,
-    password
+    password,
+    fund: 12500
 
     })
 
